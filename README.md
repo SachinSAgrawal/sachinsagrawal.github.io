@@ -1,2 +1,2 @@
 # My Website
-`sachinsagrawal.github.io` redirects to `sachinagrawal.me`.
+You will be redirected from sachinsagrawal.github.io to sachinagrawal.me.
