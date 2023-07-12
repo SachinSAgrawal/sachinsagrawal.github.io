@@ -1,2 +1,2 @@
 # My Website
-You will be redirected from sachinsagrawal.github.io to sachinagrawal.me.
+You will be redirected from https://sachinsagrawal.github.io to https://sachinagrawal.me.
