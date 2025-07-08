@@ -13,8 +13,8 @@ You’re welcome to copy or adapt the code from this website for your use. Just 
 ## Instructions
 Clone this repository or download it as a zip folder and uncompress it. If you want to use GitHub Pages for hosting, you can follow [their tutorial](https://pages.github.com/). Of course, you’re free to upload the files to any other hosting provider if you prefer.
 
-## Author
-I'm a self-taught programmer who knows many languages and I'm into app, game, and web development. If you would like to contact me, my email is [github@sachin.email](mailto:github@sachin.email).
+## Contributors
+Sachin Agrawal: I'm a self-taught programmer who knows many languages and I'm into app, game, and web development. For more information, check out my website or Github profile. If you would like to contact me, my email is [github@sachin.email](mailto:github@sachin.email).
 
 ## License
 This package is licensed under the [MIT License](LICENSE.txt).
