@@ -20,7 +20,7 @@ function displayRecentBlogs() {
     container.appendChild(item);
 
     const targetKey = blog.key || '';
-    const targetUrl = `/blog.html?post=${encodeURIComponent(targetKey)}`;
+    const targetUrl = `/blog?post=${encodeURIComponent(targetKey)}`;
 
     const goToPost = () => {
       window.location.href = targetUrl;

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   footer.innerHTML = `
     <p>
       © 2023-2026 Sachin Agrawal
-      <a class="link" href="/legal.html">Privacy & Terms</a>
+      <a class="link" href="/legal">Privacy & Terms</a>
     </p>
   `;
 });

@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     <h2>Sachin Agrawal</h2>
     <nav class="header-nav">
       <a href="/">Home</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/contact.html">Contact</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact</a>
     </nav>
     <div class="header-socials">
       <a href="https://www.linkedin.com/in/sachinsagrawal/" target="_blank" title="LinkedIn">
