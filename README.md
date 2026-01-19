@@ -1,14 +1,16 @@
 # sachinsagrawal.github.io
 
 ## About
-This is the official website of Sachin Agrawal, built using some simple HTML and CSS.
+This is the official website of Sachin Agrawal, created using pure HTML, CSS, and Javascript.
 
 * It was originally hosted on a paid domain, which I eventually stop renewing.
 * I then moved the site to Glitch, which offered free static site hosting.
 * I have now migrated the site to GitHub Pages since Glitch ended support for sites.
 
+The site is now on version two, which features much of the same styling but has been refactored to be more modular. I have also added a long-awaited blog, dedicated contact section, and proper legal page.
+
 ## Usage
-You’re welcome to copy or adapt the code from this website for your use. Just be sure to replace any links or personal information with your own. 
+You’re welcome to copy or adapt any section of or the entire code from this website for your use. Just be sure to replace any links or personal information with your own. 
 
 ## Instructions
 Clone this repository or download it as a zip folder and uncompress it. If you want to use GitHub Pages for hosting, you can follow [their tutorial](https://pages.github.com/). Of course, you’re free to upload the files to any other hosting provider if you prefer.
