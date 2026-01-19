@@ -23,106 +23,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.8" />
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="header.js" defer></script>
+    <script src="footer.js" defer></script>
   </head>
   <body>
-    <header>
-      <img src="pfp.jpg" alt="Profile Picture" class="profile-pic" />
-      <div>
-        <h1>Biomedical Engineer & Pre-Med Student</h1>
-        <h2>Sachin Agrawal</h2>
-        <h4>Washington University in St. Louis</h4>
-      </div>
-    </header>
+    <header></header>
 
-    <section>
-      <h3>Category</h3>
-      <p>Select a category below to view the links associated with it.</p>
-      <br />
-      <select id="category-select" style="font:inherit; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; font-size: 18px; padding: 10px; appearance: none; color: gray">
-        <option value="">-- Select --</option>
-        <option value="redirects">Redirects</option>
-        <option value="rickrolls">Rickrolls</option>
-        <option value="news">News Sites</option>
-        <option value="shorteners">URL Shorteners</option>
-        <option value="qr">QR Code Generators</option>
-        <option value="zip">.zip Domains</option>
-        <option value="minecraft">Minecraft</option>
-        <option value="apple">Apple</option>
-        <option value="discord">Discord</option>
-        <option value="random">Random</option>
-      </select>
-      <p id="category-desc" style="padding-top: 24px;"></p>
-      <p id="category-content" style="padding-top: 24px;"></p>
-    </section>
+    <div class="main-content">
+      <section>
+        <h3>Category</h3>
+        <p>Select a category below to view the links associated with it.</p>
+        <br />
+        <select id="category-select" style="font:inherit; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; font-size: 18px; padding: 10px; appearance: none; color: gray">
+          <option value="">-- Select --</option>
+          <option value="redirects">Redirects</option>
+          <option value="rickrolls">Rickrolls</option>
+          <option value="news">News Sites</option>
+          <option value="shorteners">URL Shorteners</option>
+          <option value="qr">QR Code Generators</option>
+          <option value="zip">.zip Domains</option>
+          <option value="minecraft">Minecraft</option>
+          <option value="apple">Apple</option>
+          <option value="discord">Discord</option>
+          <option value="random">Random</option>
+        </select>
+        <p id="category-desc" style="padding-top: 24px;"></p>
+        <p id="category-content" style="padding-top: 24px;"></p>
+      </section>
 
-    <section>
-      <h3>Notes</h3>
-      <p>
-        All domains were bought from Google Domains and Namecheap. The websites
-        are hosted on Firebase or with Namecheap's Stellar Plus plan.
-      </p>
-      <br />
-      <p>
-        A few of them were made using W3 School templates. The warning, large
-        image (with text) templates, and this site were made with help from
-        ChatGPT.
-      </p>
-      <br />
-      <p>
-        I bought many of the domains for fun, and do not intend to renew many
-        of them. If these links do not work in the future, that is why.
-      </p>
-      <br />
-      <p>
-        Lastly, not all the domains I own are listed here, either because they
-        do not fit into a category listed above, or they are private.
-      </p>
-    </section>
+      <section>
+        <h3>Notes</h3>
+        <p>
+          All domains were bought from Google Domains and Namecheap. The websites
+          are hosted on Firebase or with Namecheap's Stellar Plus plan.
+        </p>
+        <br />
+        <p>
+          A few of them were made using W3 School templates. The warning, large
+          image (with text) templates, and this site were made with help from
+          ChatGPT.
+        </p>
+        <br />
+        <p>
+          I bought many of the domains for fun, and do not intend to renew many
+          of them. If these links do not work in the future, that is why.
+        </p>
+        <br />
+        <p>
+          Lastly, not all the domains I own are listed here, either because they
+          do not fit into a category listed above, or they are private.
+        </p>
+      </section>
 
-    <section>
-      <h3>Trademarks</h3>
-      <p>
-        Any reference to third-party trademarks on this website is for personal
-        use only and does not constitute an endorsement or ownership claim. I am
-        open to amicably resolving any trademark concerns. If you believe a
-        domain name infringes upon your trademark, please contact me using the 
-        form below for further discussion. Any off topic emails will automatically
-        be deleted.
-      </p>
-    </section>
-
-    <section>
-      <h3>Contact</h3>
-        <form
-          action="https://formspree.io/f/mgvzglee"
-          method="POST"
-          class="contact-form"
-        >
-        <label>
-          Your name:
-          <input type="text" name="name" placeholder="First and Last" required>
-        </label>
-        <label>
-          Your email:
-          <input type="email" name="email" placeholder="username@email.domain" required>
-        </label>
-        <label>
-          Your dispute:
-          <textarea name="dispute" placeholder="Type your dispute here..." required rows="3"></textarea>
-        </label>
-        <button type="submit">Send</button>
-      </form>
-    </section>
+      <section>
+        <h3>Trademarks</h3>
+        <p>
+          Any reference to third-party trademarks on this website is for personal
+          use only and does not constitute an endorsement or ownership claim. I am
+          open to amicably resolving any trademark concerns. If you believe a
+          domain name infringes upon your trademark, please contact me using the 
+          link in the header for further discussion. Any off topic emails will 
+          automatically be deleted.
+        </p>
+      </section>
+    </div>
 
     <script src="links.js"></script>
 
-    <footer>
-      <p>
-        © 2023-2025 Sachin Agrawal
-        <a class="link" href="https://bit.ly/3MEvBVv" target="_blank"
-          >Privacy Policy</a
-        >
-      </p>
-    </footer>
+    <footer></footer>
   </body>
 </html>

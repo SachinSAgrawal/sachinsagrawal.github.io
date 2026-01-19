@@ -23,71 +23,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.8" />
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="header.js" defer></script>
+    <script src="footer.js" defer></script>
   </head>
   <body>
-    <header>
-      <img src="pfp.jpg" alt="Profile Picture" class="profile-pic" />
-      <div>
-        <h1>Biomedical Engineer & Pre-Med Student</h1>
-        <h2>Sachin Agrawal</h2>
-        <h4>Washington University in St. Louis</h4>
-      </div>
-    </header>
+    <header></header>
 
-    <section>
-      <h3>About</h3>
-      <p>I am a self-taught programmer who knows Swift, Objective/Arduino C, Python, JavaScript, HTML, CSS, LaTeX, PHP, Ruby, and Bash/Shell.</p> <br />
-      <p>I'm into iOS/WatchOS app and game development, so I joined the Apple Developer Program but many of my apps are open source, not published.</p> <br />
-      <p>I have also created several apps, games, and clockfaces for Fitbit Versa smartwatches, some of which are open source on GitHub as well.</p> <br />
-      <p>I am a full-stack web developer who has coded multiple websites, including this one, and has also made a custom device details plugin for YOURLS.</p> <br />
-      <p>Other projects I have worked on include making two fun Discord bots and many math/science programs for TI-84 Plus CE calculators.</p> <br />
-      <p>I’ve gotten into 3D printing/modeling with my Prusa, and while I am no expert at CAD, I have posted a few of my designs on Printables.</p> <br />
-      <p>In my free time, I like to play the popular block-based videogame Minecraft, and I post primarily Minecraft videos on my YouTube channel.</p> <br />
-      <p>Some of my other hobbies besides coding and Minecraft include playing the violin, traveling, photography, lacrosse, rickrolling, and reading.</p>
-    </section>
+    <div class="main-content">
+      <section class="hero">
+        <img src="pfp.jpg" alt="Profile Picture" class="profile-pic-main" />
+        <div class="hero-text">
+          <h1>Sachin Agrawal</h1>
+          <p class="subtitle subtitle-main">Biomedical Engineer & Pre-Med Student</p>
+          <p class="subtitle subtitle-secondary">Washington University in St. Louis</p>
+          <p class="hero-about">Although I am ultimately interested in a career researching and developing medical devices for direct clinical applications, I enjoy software development and programming. Much of my experience is with iOS development using Swift and full-stack web development using a combination of HTML, CSS, JavaScript, and PHP, but I know other languages, including Python, C++, and LaTeX. You can read about my projects on my blog and even try some out for yourself, as I am a big fan of free and open-source software. My other hobbies besides coding are playing the violin, photography, 3D printing, traveling, biking, cooking, playing Minecraft, and YouTube content creation.</p>
+        </div>
+      </section>
 
-   <section>
-      <h3>Websites</h3>
-      <div id="websites-list"></div>
-    </section>
+      <section>
+        <h3>Recent Posts</h3>
+        <div id="recent-blogs" class="recent-blogs-container"></div>
+        <p><a href="/blog.html">View All</a></p>
+      </section>
 
-    <section>
-      <h3>Socials</h3>
-      <div id="socials-list"></div>
-    </section>
+      <section>
+        <h3>Get in Touch</h3>
+        <p>Feel free to reach out!</p></br>
+        <p><a href="/contact.html">Contact Me</a></p>
+      </section>
 
-    <section>
-      <h3>Contact</h3>
-        <form
-          action="https://formspree.io/f/xrblnlqo"
-          method="POST"
-          class="contact-form"
-        >
-        <label>
-          Your name:
-          <input type="text" name="name" placeholder="First and Last" required>
-        </label>
-        <label>
-          Your email:
-          <input type="email" name="email" placeholder="username@email.domain" required>
-        </label>
-        <label>
-          Your message:
-          <textarea name="message" placeholder="Type your message here..." required rows="3"></textarea>
-        </label>
-        <button type="submit">Send</button>
-      </form>
-    </section>
+      <section>
+        <h3>Rate My Website</h3>
+        <div id="rating-container" class="rating-container">
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="rating-message" style="display: none;"></p>
+        </div>
+      </section>
+    </div>
 
+    <script src="data.js"></script>
     <script src="script.js"></script>
+    <script src="rating.js"></script>
 
-    <footer>
-      <p>
-        © 2023-2025 Sachin Agrawal
-        <a class="link" href="https://bit.ly/3MEvBVv" target="_blank"
-          >Privacy Policy</a
-        >
-      </p>
-    </footer>
+    <footer></footer>
   </body>
 </html>

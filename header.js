@@ -1,0 +1,27 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('header');
+  if (!header) return;
+
+  header.innerHTML = `
+    <h2>Sachin Agrawal</h2>
+    <nav class="header-nav">
+      <a href="/">Home</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="header-socials">
+      <a href="https://www.linkedin.com/in/sachinsagrawal/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/sachinsagrawal" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://discord.com/users/575795042933932071" target="_blank" title="Discord">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://instagram.com/sachinsagrawal2" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  `;
+});
