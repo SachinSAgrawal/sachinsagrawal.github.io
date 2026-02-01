@@ -14,7 +14,7 @@ function initRating() {
       for (let i = 0; i <= index; i++) {
         stars[i].classList.add('active');
       }
-      message.textContent = 'Thanks for your feedback, which may be considered in the future.';
+      message.textContent = 'Thanks for your feedback, which is not being recorded.';
       message.style.display = 'block';
       locked = true;
       if (starsWrapper) {

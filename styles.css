@@ -1,5 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700");
 
+/* Light */
+
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: #555555;
+  --text-muted: #999999;
+  --text-light: #666666;
+  
+  --accent-green: #00df90;
+  --accent-green-hover: #00bf70;
+  --accent-green-light: #7effc1;
+  
+  --header-gradient-start: #00bfff;
+  --header-gradient-end: #00ff00;
+  
+  --card-bg: #ffffff;
+  --card-border: #eeeeee;
+  --card-shadow: rgba(0, 0, 0, 0.06);
+  
+  --input-bg: #ffffff;
+  --input-border: #cccccc;
+  --input-text: gray;
+  --input-placeholder: gray;
+  
+  --footer-bg: #f2f2f2;
+  --star-inactive: #dddddd;
+  --link-color: #0066cc;
+  --link-visited: #6d34f1;
+}
+
+/* Dark */
+
+body.dark-mode {
+  --bg-primary: #0f1113;
+  --text-primary: #e0e0e0;
+  --text-secondary: #aaaaaa;
+  --text-muted: #888888;
+  --text-light: #d1d1d1;
+  
+  --accent-green: #00a870;
+  --accent-green-hover: #008a5a;
+  --accent-green-light: #006145;
+  
+  --header-gradient-start: #00a3e0;
+  --header-gradient-end: #00cc00;
+  
+  --card-bg: #171a21;
+  --card-border: #232631;
+  --card-shadow: rgba(0, 0, 0, 0.35);
+  
+  --input-bg: #12151b;
+  --input-border: #2a2f3a;
+  --input-text: #e6e6e6;
+  --input-placeholder: #9aa3b2;
+  
+  --footer-bg: #1a1d24;
+  --star-inactive: #3a3a3a;
+  --link-color: #6eb8ff;
+  --link-visited: #b794f6;
+}
+
 /* Global */
 
 body {
@@ -8,13 +70,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 h3 {
   margin-top: 0px;
   font-size: 28px;
   font-weight: bold;
-  color: #555555;
+  color: var(--text-secondary);
 }
 
 p {
@@ -24,6 +88,14 @@ p {
 section {
   padding: 50px 50px 0px 50px;
   font-size: 20px;
+}
+
+section a {
+  color: var(--link-color);
+}
+
+section a:visited {
+  color: var(--link-visited);
 }
 
 a.link {
@@ -41,7 +113,7 @@ a.link {
 /* Header */
 
 header {
-  background: linear-gradient(135deg, #00bfff, #00ff00);
+  background: linear-gradient(90deg, var(--header-gradient-start), var(--header-gradient-end));
   background-size: 100% 100%;
   color: #ffffff;
   padding: 50px;
@@ -85,10 +157,37 @@ header h2 {
 .header-socials a {
   color: #ffffff;
   font-size: 24px;
+  text-decoration: none;
   transition: transform 0.2s, opacity 0.2s;
 }
 
+.header-socials a,
+.header-socials button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-socials svg {
+  width: 24px;
+  height: 24px;
+}
+
 .header-socials a:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.theme-toggle:hover {
   transform: scale(1.15);
   opacity: 0.8;
 }
@@ -100,12 +199,16 @@ header h2 {
 }
 
 footer {
-  background-color: #f2f2f2;
+  background-color: var(--footer-bg);
   padding: 10px;
   text-align: center;
   font-size: 14px;
-  color: #555555;
+  color: var(--text-secondary);
   margin-top: 50px;
+}
+
+footer a {
+  color: inherit;
 }
 
 /* About */
@@ -130,11 +233,11 @@ footer {
   margin: 0 0 16px 0;
   font-size: 48px;
   font-weight: bold;
-  color: #555555;
+  color: var(--text-secondary);
 }
 
 .subtitle {
-  color: #00df90;
+  color: var(--accent-green);
 }
 
 .subtitle-main {
@@ -150,7 +253,7 @@ footer {
   font-size: 18px;
   margin-top: 20px;
   line-height: 1.6;
-  color: #000;
+  color: var(--text-light);
 }
 
 .bio-blurb {
@@ -182,13 +285,19 @@ footer {
 .contact-form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border);
   border-radius: 6px;
   font-family: inherit;
   font-size: 18px;
   box-sizing: border-box;
   margin-top: 4px;
-  color: gray;
+  background: var(--input-bg);
+  color: var(--input-text);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--input-placeholder);
 }
 
 .contact-form textarea {
@@ -198,7 +307,7 @@ footer {
 }
 
 .contact-form button {
-  background: #00df90;
+  background: var(--accent-green);
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -211,18 +320,18 @@ footer {
 }
 
 .contact-form button:hover {
-  background: #00bf70;
+  background: var(--accent-green-hover);
 }
 
 /* Blog */
 
 .blog-card,
 .recent-blog-item {
-  background: #fff;
-  border: 1px solid #eee;
-  border-left: 4px solid #00df90;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-left: 4px solid var(--accent-green);
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 12px var(--card-shadow);
   padding: 20px;
   cursor: pointer;
 }
@@ -244,13 +353,13 @@ footer {
 .recent-blog-item h4 {
   margin: 0;
   font-size: 18px;
-  color: #555555;
+  color: var(--text-secondary);
 }
 
 .blog-date,
 .recent-blog-item p {
   margin: 0;
-  color: #999;
+  color: var(--text-muted);
   font-size: 14px;
 }
 
@@ -262,12 +371,12 @@ footer {
   display: none;
   padding: 0 20px 24px 20px;
   font-size: 18px;
-  color: #555;
+  color: var(--text-secondary);
 }
 
 .blog-content p {
   margin-bottom: 16px;
-  color: #000;
+  color: var(--text-light);
   font-size: 16px;
 }
 
@@ -278,12 +387,12 @@ footer {
 .blog-preview {
   padding: 0 20px 20px 20px;
   font-size: 18px;
-  color: #666;
+  color: var(--text-light);
 }
 
 .blog-preview p {
   margin-bottom: 12px;
-  color: #000;
+  color: var(--text-light);
   font-size: 16px;
 }
 
@@ -315,17 +424,17 @@ footer {
 }
 
 .star {
-  color: #ddd;
+  color: var(--star-inactive);
   transition: color 0.2s;
   display: inline-block;
 }
 
 .stars:not(.locked) .star.hover {
-  color: #7effc1;
+  color: var(--accent-green-light);
 }
 
 .star.active {
-  color: #00df90;
+  color: var(--accent-green);
 }
 
 .stars.locked {
@@ -338,7 +447,7 @@ footer {
 
 .rating-message {
   margin-top: 16px;
-  color: #555555;
+  color: var(--text-secondary);
   font-size: 18px;
   font-style: italic;
 }
@@ -347,6 +456,7 @@ footer {
 
 @media (max-width: 768px) {
   header {
+    background: linear-gradient(110deg, var(--header-gradient-start), var(--header-gradient-end));
     flex-direction: column;
     align-items: center;
     gap: 20px;
