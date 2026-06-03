@@ -5,7 +5,7 @@ const BLOGS_DATA = [
     date: 'February 2026',
     paragraphs: [
       'As you might have noticed, this website has undergone a significant transformation. While I have kept the same color scheme and underlying styling, I have touched basically every page and included support for dark mode. The code is all still just HTML, CSS, and JavaScript, but it has been significantly refactored. I have transitioned to a more modular approach, such as separating the header and footer components into their own files for reuse. This makes it easier to both maintain the code and add new pages. The content within the header has also been swapped around with some of the content on the home page. Additionally, I have finally published my blogs, which I had been meaning to do for a while as they were just sitting as drafts. Going forward, I plan to keep the posts relatively up-to-date, but no promises. Lastly, I wanted to make you aware of the proper legal page for this site that is accessible through the link in the footer. I hope you enjoy the new look and feel of the site, and although the rating on the home page may be a joke, I welcome any feedback, so please do contact me.',
-      'I would also like to take this opportunity to plug some of my other projects that I\'ve worked on that don\'t have their own dedicated blog posts. You can find links to them on my GitHub page, and they include two games made with Ruby, some Arduino projects, a few fun Python scripts, and a custom Device Details plugin for YOURLS.'
+      'I would also like to take this opportunity to plug some of my other projects that I\'ve worked on that don\'t have their own dedicated blog posts. You can find links to them on my GitHub page, accessible through the icon in the header, and they include two games made with Ruby, a custom Device Details plugin for YOURLS, and others.'
     ],
     link: {
       url: '',
@@ -19,7 +19,7 @@ const BLOGS_DATA = [
     date: 'January 2026',
     paragraphs: [
       'I grew up using Quizlet to study vocabulary and terms for almost all of my classes in middle school and high school. There was nothing more fun than a quick but competitive game of Quizlet Live. However, as the years progress, I got more and more annoyed as they started requiring a paid subscription for some features, placed ads everywhere, and generally made the experience worse by incorporating AI.',
-      'I needed to memorize some vocabulary for a quiz, so rather than actually do that with some paper flashcards or use Quizlet itself, I spent much longer making my own version of Quizlet from scratch. I\'ve tried to mimic most of the core functionality as best as possible, including the Gravity game that apparently no longer exists. My Kwizlet has four modes: the aforementioned Gravity, simple flashcards, Learn and Match. I am unlikely to add any new features in the future, but may fix bugs, so please let me know if you find any. You can upload your own CSV file, but I\'ve also included a generator for making sets. Have fun, and don\'t get me sued!'
+      'I needed to memorize terms for my college introductory biology course, so rather than actually do that with some paper flashcards or use Quizlet itself, I spent much longer making my own version of Quizlet from scratch. I\'ve tried to mimic most of the core functionality as best as possible, including the Gravity game that apparently no longer exists. My Kwizlet has four modes: the aforementioned Gravity, simple flashcards, Learn and Match. I am unlikely to add any new features in the future, but may fix bugs, so please let me know if you find any. You can upload your own CSV file, but I\'ve also included a generator for making sets. Have fun, and don\'t get me sued!'
     ],
     link: {
       url: 'https://pagedeploy.github.io/kwizlet',
@@ -36,7 +36,7 @@ const BLOGS_DATA = [
       'While the Icon Composer app makes it easy to incorporate Liquid Glass into the design and position the various elements of the icon, it only allows for the export of a .png file without the correct padding. This program uses ffmpeg to automatically add the required padding, convert the icon into different sizes, and package them all into a single .icns file. You can view the icons I made with this tool using the link below.'
     ],
     link: {
-      url: 'https://macosicons.com/#/u/sachinsagrawal',
+      url: 'https://macosicons.com/u/sachinsagrawal',
       displayText: 'macosicons.com/sachinsagrawal',
       icon: 'https://www.svgrepo.com/show/463936/app-store-square.svg'
     }
@@ -74,7 +74,30 @@ const BLOGS_DATA = [
         url: 'https://github.com/SachinSAgrawal/Anti-Rickroll',
         displayText: 'github.com/antirickroll',
         icon: 'https://github.com/SachinSAgrawal/Anti-Rickroll/blob/main/icons/icon128.png?raw=true'
-      }]
+      }
+    ]
+  },
+  {
+    key: 'arduino',
+    title: 'Arduino Robotics',
+    date: 'May 2025',
+    paragraphs: [
+      'Throughout all of high school, I have used Arduino microcontrollers to construct all sorts of robots, whether it was for my school\'s robotics team, the build events for Science Olympiad Division C, or summer programs. I started off pretty simple, eventually going from the blink function using the built-in LED to fully functional and competition winning robots.',
+      'As I mentioned earlier, I participated in my school\'s robotics team and had the opportunity to lead it my senior year. Given the quantity of members, we decided to teach everyone some Arduino basics, then give them some coding challenges. One of these challenges was to code a game of either Whack-a-Mole or Simon given a circuit and some pseudocode. The first link contains the circuit and the actual code I used when demonstrating the games to all the club members.',
+      'Once everyone was up to speed on Arduinos, we could actually start building our robots, which would compete in the National Robotics Challenge\'s Robot Maze contest. Some groups chose to use a kit, but mine took the knowledge we gained from competing the previous year and designed ours from scratch. Now that the competition is over, I have decided to public release the code and design files in a tutorial accessible through the second link. The code is probably one of the best that I have written, as it was built from the ground up to ensure speed and reliability for the robot with the strategic use of helper functions. A similar robot and piece of code was used for the Science Olympiad Robot Tour event, for which my teammate and I medalled first place with.'
+    ],
+    link: [
+      {
+        url: 'https://github.com/SachinSAgrawal/Arduino-WhackAMole-Simon',
+        displayText: 'github.com/arduinogames',
+        icon: 'https://www.svgrepo.com/show/289087/mole.svg'
+      },
+      {
+        url: 'https://github.com/SachinSAgrawal/NRC-Maze-Robot-Tutorial',
+        displayText: 'github.com/nrcmazerobot',
+        icon: 'https://www.svgrepo.com/show/241638/labyrinth-maze.svg'
+      }
+    ]
   },
   {
     key: '3dprinting',
@@ -184,12 +207,32 @@ const BLOGS_DATA = [
     paragraphs: [
       'I got the original Fitbit Versa smartwatch a little less than a year after it was released, and while there was a good amount of apps and clockfaces for it at the time, I could not find any that were exactly what I wanted, so I started to develop my own. I was unfortunately too inexperienced at that time to complete what I had started, so I got discouraged and stopped working on it for a while. However, once the pandemic hit, I suddenly had a lot of free time, and that\'s when I decided I would try to pick up where I left off.',  
       'I\'m glad I did, because it helped me improve my programming skills a lot and over the next year or so, I created several apps, games, and clockfaces. Some of my creations include a recreation of the Chrome Dino Game and a scheduler app. However, there was one idea that kept nagging at me: recreating the Modular and Infograph clockfaces from the Apple Watch. I eventually made them, and Modular is my most popular clockface based on the review count.',
-      'Unfortunately my apps are only compatible with the older generation of Versas and I don\'t plan on updating them anymore since I just got an actual Apple Watch. Also, Google bought out Fitbit not long ago and has made the development process unnecessarily complicated. You can check out all of my apps using the link below, some of which are open source on GitHub as well.'
+      'Unfortunately my apps are only compatible with the older generation of Versas and I don\'t plan on updating them anymore since I just got an actual Apple Watch. Also, Google bought out Fitbit not long ago and has made the development process unnecessarily complicated. You can check all the apps out using the link below, and some of them are open source on GitHub as well.'
     ],
     link: {
       url: 'https://pagedeploy.github.io/sagrawal8fitbitdev',
       displayText: 'github.io/sagrawal8fitbitdev',
       icon: 'https://github.com/pagedeploy/cdn/blob/main/fitbit.png?raw=true'
     }
+  },
+  {
+    key: 'python',
+    title: 'Python Scripts',
+    date: 'June 2021',
+    paragraphs: [
+      'The first true language I learned was Python, as I don\'t think Scratch\'s block coding really counts. As soon as I got a hang of the basic syntax, I started using it for games and messing around with turtle graphics. I was having the turtle draw shapes when it occurred to me that I could use it as a canvas for some very basic pixel art, hence the first link. The turtle moves along a 6x6 grid, allowing you to either set that pixel as the foreground or background color. As for the second link, I figured that Hangman would be pretty simple. Indeed, it was, and after fixing a few bugs with keeping track of the number of remaining guesses, the game was ready, or so I thought until my cousin suggested I add some ASCII art visuals that display in the terminal. He also inspired me to create this blog. I have some ideas for improvements that I\'d like to make to both programs, time permitting, so it is possible that some things may change in the future.'
+    ],
+    link: [
+      {
+        url: 'https://github.com/SachinSAgrawal/Pixel-Art-Board',
+        displayText: 'github.com/pixelartboard',
+        icon: 'https://www.svgrepo.com/show/500123/turtle.svg'
+      },
+      {
+        url: 'https://github.com/SachinSAgrawal/Hangman-ASCII',
+        displayText: 'github.com/hangmanascii',
+        icon: 'https://www.svgrepo.com/show/202832/gallows-hang.svg'
+      }
+    ]
   }
 ];
