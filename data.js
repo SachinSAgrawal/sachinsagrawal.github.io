@@ -1,16 +1,31 @@
 const BLOGS_DATA = [
   {
+    key: 'yourls',
+    title: 'YOURLS Plugins',
+    date: 'June 2026',
+    paragraphs: [
+      'I first started using YOURLS to host my own link shortening service a few years ago, and I wanted to know who was clicking on my links, so I developed a plugin that would allow me to see the device details for the click. It was pretty simple, nothing more than a simple user-agent and IP address parser. Then I realized that I could log much more about the device with a little extra code, so I made a new version that collected this information. But due to the method I was using to transfer the data to the backend, it was always one click behind. Eventually, I got too busy to develop a fix for the plugin.',
+      'However, recently I got an extremely helpful and thorough comment on a GitHub discussion that I forgot I even wrote, and it explained how to fix everything about my code. Instantly, I knew I had to come back to this project, especially since I now had the time. I am proud to announce that version three of my device details plugin has finally been released.',
+      'I then decided to revisit an idea I had for a plugin but never got around to, one that would automatically generate QR codes. Hence, I created my second plugin which displays a customizable QR code generator upon link generation and afterwards. I was also inspired to create a plugin manager that allows for easy download and deletion of plugins after receiving a comment requesting to make my device details plugin compatible with a similar one. You can check them all out on my link shortener, which has links to the code for each plugin.'
+    ],
+    link: {
+      url: 'https://yourls.dreamhosters.com',
+      displayText: 'yourls.dreamhosters.com',
+      icon: 'https://yourls.org/assets/images/favicon.svg'
+    }
+  },
+  {
     key: 'update',
     title: 'Site Update',
     date: 'February 2026',
     paragraphs: [
       'As you might have noticed, this website has undergone a significant transformation. While I have kept the same color scheme and underlying styling, I have touched basically every page and included support for dark mode. The code is all still just HTML, CSS, and JavaScript, but it has been significantly refactored. I have transitioned to a more modular approach, such as separating the header and footer components into their own files for reuse. This makes it easier to both maintain the code and add new pages. The content within the header has also been swapped around with some of the content on the home page. Additionally, I have finally published my blogs, which I had been meaning to do for a while as they were just sitting as drafts. Going forward, I plan to keep the posts relatively up-to-date, but no promises. Lastly, I wanted to make you aware of the proper legal page for this site that is accessible through the link in the footer. I hope you enjoy the new look and feel of the site, and although the rating on the home page may be a joke, I welcome any feedback, so please do contact me.',
-      'I would also like to take this opportunity to plug some of my other projects that I\'ve worked on that don\'t have their own dedicated blog posts. You can find links to them on my GitHub page, accessible through the icon in the header, and they include two games made with Ruby, a custom Device Details plugin for YOURLS, and others.'
+      'I would also like to take this opportunity to plug some of my other projects that I\'ve worked on that don\'t have their own dedicated blog posts, including two games made with Ruby, an extensive markdown cheatsheet, and more. You can learn more about them on my GitHub page, accessible through the icon in the header and linked below.'
     ],
     link: {
-      url: '',
-      displayText: '',
-      icon: ''
+      url: 'https://github.com/SachinSAgrawal',
+      displayText: 'github.com/sachinsagrawal',
+      icon: 'https://www.svgrepo.com/show/512317/github-142.svg'
     }
   },
   {
