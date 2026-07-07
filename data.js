@@ -1,5 +1,18 @@
 const BLOGS_DATA = [
   {
+    key: 'rickroll',
+    title: 'Rickroll Generator',
+    date: 'July 2026',
+    paragraphs: [
+      'I had some free time this summer, so I decided to come back to a project that has its roots many years ago. During the pandemic, rickrolling made a return, and I was looking for creative ways to rickroll people. I stumbled across Jeff Keen\'s site that would allow me to make realistic-looking LA Times headlines that were actually rickrolls. However, it didn\'t have a ton of features, so I looked for some self-hosted options. I came across Nihal Navath\'s generator, which was almost exactly what I was looking for. After tweaking a few things visually, we had the site up and running. Eventually, I pulled the plug since I was never really satisfied, which brings us to the present day. Feeling much more confident about full-stack web development, I decided that I would tackle the creation of my own rickroll generator, combining the best parts of both other versions. My custom rickroll generator, set up to mimic LA Times at present but easily configurable, is built from the ground up to be as feature-rich as possible, yet contain a lightweight codebase.'
+    ],
+    link: {
+      url: 'https://latimes.dreamhosters.com',
+      displayText: 'latimes.dreamhosters.com',
+      icon: 'https://latimes.dreamhosters.com/assets/img/rickastley.png'
+    }
+  },
+  {
     key: 'yourls',
     title: 'YOURLS Plugins',
     date: 'June 2026',
