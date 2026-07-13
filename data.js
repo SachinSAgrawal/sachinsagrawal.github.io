@@ -22,7 +22,7 @@ const BLOGS_DATA = [
     link: {
       url: 'https://latimes.dreamhosters.com',
       displayText: 'latimes.dreamhosters.com',
-      icon: 'https://latimes.dreamhosters.com/assets/images/rickastley.png'
+      icon: 'https://latimes.dreamhosters.com/assets/images/rick.png'
     }
   },
   {
