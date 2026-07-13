@@ -1,15 +1,28 @@
 const BLOGS_DATA = [
   {
+    key: 'linkinbio',
+    title: 'Link in Bio',
+    date: 'August 2026',
+    paragraphs: [
+      'Feeling very confident about full-stack web development after the completion of my previous project, detailed about in the blog below, I decided to create a link in bio website that is fully customizable and free to use. I knew that there were existing options for a self-hosted website similar to what I had in mind, but they either had an extensive codebase or lacked specific features. Once again, I figured that similar functionality could be achieved with a relatively small codebase, so I set out to create my own. Indeed, I was correct, and most of the features of sites like Linktree and LinkStack are available in my version. Specifically, you can add your own links, description, header, social profiles, and contact information. You can also change the appearance of most elements, including the background, buttons, font, and more. I may add the ability to add your own custom CSS or theme in the future. But for now, you can claim your username with the link below.'
+    ],
+    link: {
+      url: 'https://links.dreamhosters.com',
+      displayText: 'links.dreamhosters.com',
+      icon: 'https://links.dreamhosters.com/assets/images/logo.svg'
+    }
+  },
+  {
     key: 'rickroll',
     title: 'Rickroll Generator',
     date: 'July 2026',
     paragraphs: [
-      'I had some free time this summer, so I decided to come back to a project that has its roots many years ago. During the pandemic, rickrolling made a return, and I was looking for creative ways to rickroll people. I stumbled across Jeff Keen\'s site that would allow me to make realistic-looking LA Times headlines that were actually rickrolls. However, it didn\'t have a ton of features, so I looked for some self-hosted options. I came across Nihal Navath\'s generator, which was almost exactly what I was looking for. After tweaking a few things visually, we had the site up and running. Eventually, I pulled the plug since I was never really satisfied, which brings us to the present day. Feeling much more confident about full-stack web development, I decided that I would tackle the creation of my own rickroll generator, combining the best parts of both other versions. My custom rickroll generator, set up to mimic LA Times at present but easily configurable, is built from the ground up to be as feature-rich as possible, yet contain a lightweight codebase.'
+      'During the pandemic, rickrolling made a return, and I was looking for creative ways to rickroll people. I stumbled across Jeff Keen\'s site that would allow me to make realistic-looking LA Times headlines that were actually rickrolls. However, it didn\'t have a ton of features, namely tracking clicks, so I looked for some self-hosted options. I came across Nihal Navath\'s generator, which was almost exactly what I was looking for. After tweaking a few things visually, we had the site up and running. Eventually, I pulled the plug on hosting the site since I got too busy to maintain it, which brings us to this summer. I had some free time, so I decided that I would revisit this project that traces its roots back to a few years ago. In creating my own rickroll generator, I have combined the best parts of both other versions. My custom generator, set up to mimic LA Times at present but easily configurable, is built from the ground up to be as feature-rich as possible while maintaining a minimal codebase.'
     ],
     link: {
       url: 'https://latimes.dreamhosters.com',
       displayText: 'latimes.dreamhosters.com',
-      icon: 'https://latimes.dreamhosters.com/assets/img/rickastley.png'
+      icon: 'https://latimes.dreamhosters.com/assets/images/rickastley.png'
     }
   },
   {
@@ -47,7 +60,7 @@ const BLOGS_DATA = [
     date: 'January 2026',
     paragraphs: [
       'I grew up using Quizlet to study vocabulary and terms for almost all of my classes in middle school and high school. There was nothing more fun than a quick but competitive game of Quizlet Live. However, as the years progress, I got more and more annoyed as they started requiring a paid subscription for some features, placed ads everywhere, and generally made the experience worse by incorporating AI.',
-      'I needed to memorize terms for my college introductory biology course, so rather than actually do that with some paper flashcards or use Quizlet itself, I spent much longer making my own version of Quizlet from scratch. I\'ve tried to mimic most of the core functionality as best as possible, including the Gravity game that apparently no longer exists. My Kwizlet has four modes: the aforementioned Gravity, simple flashcards, Learn and Match. I am unlikely to add any new features in the future, but may fix bugs, so please let me know if you find any. You can upload your own CSV file, but I\'ve also included a generator for making sets. Have fun, and don\'t get me sued!'
+      'I needed to memorize terms for my college introductory biology course, so rather than actually do that with some paper flashcards or use Quizlet itself, I spent much longer making my own version of Quizlet from scratch, accessible to anyone for free and without ads. I\'ve tried to mimic most of the core functionality as best as possible, including the Gravity game that apparently no longer exists. My Kwizlet has four modes: the aforementioned Gravity, simple flashcards, Learn, and Match. I am unlikely to add any new features in the future, but may fix bugs, so please let me know if you find any. You can upload your own CSV file, but I\'ve also included a generator for making sets. Have fun studying, but please use the site responsibly!'
     ],
     link: {
       url: 'https://pagedeploy.github.io/kwizlet',
