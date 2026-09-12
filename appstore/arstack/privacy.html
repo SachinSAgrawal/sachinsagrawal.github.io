@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stack AR: Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #14181f;
+    --muted: #5b6472;
+    --rule: #e3e7ee;
+    --bg: #ffffff;
+    --field: #fbfcfe;
+    --accent: #2f6fe0;
+    --on-accent: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e9edf4; --muted: #9aa4b4; --rule: #232936; --bg: #0e1219;
+      --field: #161b24; --accent: #6fa4ff; --on-accent: #0e1219;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 62rem;
+    padding: 3rem 1.5rem 5rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 .35rem; }
+  h2 { font-size: 1.15rem; margin: 2.4rem 0 .6rem; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .45rem; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+  a { color: var(--accent); }
+  .lede {
+    font-size: 1.05rem;
+    border-left: 3px solid var(--accent);
+    padding: .25rem 0 .25rem 1rem;
+    margin-bottom: 2rem;
+    color: var(--ink);
+  }
+  form { display: grid; gap: 1.25rem; margin: 1.5rem 0 0; max-width: 34rem; }
+  label { display: block; font-size: .9rem; color: var(--muted); margin-bottom: .4rem; }
+  input, textarea {
+    width: 100%;
+    font: inherit;
+    color: var(--ink);
+    background: var(--field);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: .65rem .75rem;
+  }
+  textarea { min-height: 9rem; resize: vertical; }
+  input:focus, textarea:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+    border-color: transparent;
+  }
+  button {
+    justify-self: start;
+    font: inherit;
+    font-weight: 600;
+    color: var(--on-accent);
+    background: var(--accent);
+    border: 0;
+    border-radius: 8px;
+    padding: .7rem 1.6rem;
+    cursor: pointer;
+  }
+  button:hover { filter: brightness(1.08); }
+  footer { color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Stack AR for iPhone and iPad · Last updated 12 September 2026</p>
+
+<p class="lede">
+  Stack AR does not collect, store, transmit, or share any personal data. There are no
+  accounts, no analytics, and no network connections of any kind.
+</p>
+
+<h2>What the app does not collect</h2>
+<p>
+  The app has no sign-in, no user profiles, and no server component. It does not gather
+  your name, email address, device identifiers, location, contacts, usage analytics, or
+  crash reports. It contains no advertising and no third-party SDKs. Every framework it
+  uses is supplied by Apple as part of iOS.
+</p>
+
+<h2>What the app accesses, and why</h2>
+<p>
+  <strong>Camera.</strong> Stack AR requires access to your device's camera. This is what
+  makes augmented reality possible: the camera image is what the tower is drawn on top of,
+  and it is also how the app finds the floor or table you place the tower on.
+</p>
+<ul>
+  <li>Camera frames are processed entirely on your device by Apple's ARKit framework.</li>
+  <li>No photo, video, or camera frame is recorded, saved to your photo library, or written to storage by the app.</li>
+  <li>Nothing from the camera is transmitted anywhere. The app cannot send it, because it makes no network requests at all.</li>
+  <li>People in view are separated from the background on device so they can be drawn in front of the tower. That separation happens frame by frame and nothing about it is kept.</li>
+  <li>You can refuse or revoke camera access at any time in Settings. The app cannot draw without a camera feed, but it will say so rather than fail silently.</li>
+</ul>
+<p>
+  <strong>Motion sensors.</strong> ARKit uses the device's accelerometer and gyroscope to
+  track how you move around the room so the tower stays where you put it. This data is used
+  only for live tracking, is handled on device, and is never stored or transmitted.
+</p>
+<p>
+  The app also plays sound and haptic feedback as blocks land. Neither requires a permission
+  and neither reveals anything about you.
+</p>
+
+<h2>What is stored on your device</h2>
+<p>
+  The app saves one thing in its own storage on your device: your high score. It is never
+  sent anywhere, because the app makes no network connections at all, and the developer has
+  no access to it. Deleting the app removes it.
+</p>
+
+<h2>Children</h2>
+<p>
+  Stack AR is rated 4+ and is suitable for all ages. Because it collects no data
+  whatsoever, it collects no data from children either.
+</p>
+
+<h2>Third parties</h2>
+<p>
+  There are no third-party services, analytics providers, advertising networks, or data
+  processors involved in this app. No data is sold or shared, because none is collected.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If a future version of the app changes what it accesses, this policy will be updated
+  before that version is released, and the date at the top of this page will change.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions about this policy can go to the developer with the form below.
+</p>
+
+<form action="https://formspree.io/f/mzebqllv" method="POST">
+  <div>
+    <label for="name">Your name</label>
+    <input id="name" type="text" name="name" placeholder="First and Last" required>
+  </div>
+  <div>
+    <label for="email">Your email</label>
+    <input id="email" type="email" name="email" placeholder="username@email.domain" required>
+  </div>
+  <div>
+    <label for="subject">Subject</label>
+    <input id="subject" type="text" name="_subject" placeholder="Subject of your message" required>
+  </div>
+  <div>
+    <label for="message">Your message</label>
+    <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+  </div>
+  <button type="submit">Send</button>
+</form>
+
+<hr>
+
+<footer>
+  © 2023-2026 Sachin Agrawal · Not affiliated with, endorsed by, or sponsored by any game
+  publisher.
+</footer>
+
+</body>
+</html>
