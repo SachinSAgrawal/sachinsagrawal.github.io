@@ -7,7 +7,9 @@ This is the official website of Sachin Agrawal, created using pure HTML, CSS, an
 * I then moved the site to Glitch, which offered free static site hosting.
 * I have now migrated the site to GitHub Pages since Glitch ended support for sites.
 
-The site is now on version two, which features much of the same styling but has been refactored to be more modular. I have also added a long-awaited blog, dedicated contact section, and proper legal page.
+Version two features much of the same styling as the original site but has been refactored to be more modular. I have also added a long-awaited blog, dedicated contact section, and proper legal page.
+
+Version three of the site is identical to version two, but many of the supplemental files have been condensed and moved into the `assets` folder.
 
 ## Usage
 You’re welcome to copy or adapt any section of or the entire code from this website for your use. Just be sure to replace any links or personal information with your own. 
